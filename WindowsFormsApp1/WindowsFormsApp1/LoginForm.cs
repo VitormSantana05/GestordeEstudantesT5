@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +31,24 @@ namespace WindowsFormsApp1
         private void LoginForm_Load(object sender, EventArgs e)
         {
             pictureBox1.Image = Image.FromFile("../../Imagem/uslogin.jpg");
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            Close()
+        }
+
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            MEU_BD bancoDeDados = new MEU_BD();
+            MySqlDataAdapter adaptador = new MySqlDataAdapter();
+        DataTable tabela = new DataTable();
+            MySqlCommand comando = new MySqlCommand("SELECT * FROM `usuarios` WHERE 1 `username` = @usn AND `password` = @psw", bancoDeDados.getConexao);
         }
     }
 }

@@ -40,7 +40,10 @@
             // 
             // tstUser
             // 
+            this.tstUser.BackColor = System.Drawing.Color.DeepPink;
+            this.tstUser.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tstUser.Location = new System.Drawing.Point(156, 247);
+            this.tstUser.Multiline = true;
             this.tstUser.Name = "tstUser";
             this.tstUser.Size = new System.Drawing.Size(107, 20);
             this.tstUser.TabIndex = 0;
@@ -48,7 +51,10 @@
             // 
             // txtSenha
             // 
+            this.txtSenha.BackColor = System.Drawing.Color.DeepPink;
+            this.txtSenha.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtSenha.Location = new System.Drawing.Point(156, 297);
+            this.txtSenha.Multiline = true;
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(107, 20);
             this.txtSenha.TabIndex = 1;
@@ -57,7 +63,8 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(40, 295);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(52, 297);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 19);
             this.label2.TabIndex = 3;
@@ -65,12 +72,13 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(93, 64);
+            this.pictureBox1.Location = new System.Drawing.Point(88, 64);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(116, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // btnEntrar
             // 
@@ -85,12 +93,13 @@
             this.btnEntrar.TabIndex = 5;
             this.btnEntrar.Text = "Entrar";
             this.btnEntrar.UseVisualStyleBackColor = false;
+            this.btnEntrar.Click += new System.EventHandler(this.btnEntrar_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(40, 248);
+            this.label3.Location = new System.Drawing.Point(52, 248);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(65, 19);
             this.label3.TabIndex = 2;
@@ -110,12 +119,13 @@
             this.btnCancelar.TabIndex = 6;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkGray;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(293, 450);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnEntrar);
